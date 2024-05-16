@@ -1,0 +1,71 @@
+.confirmation-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 50px;
+}
+.confirmation-title {
+    text-align: center;
+}
+.confirmation-content {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.confirmation-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+.confirmation-label {
+    margin-top: 10px;
+}
+.confirmation-line-horizontal {
+    width: 100%;
+    border-top: 1px solid #000;
+    margin: 0 20px;
+}
+
+.confirmation-image{
+    height: 10px;
+    margin-top: 5%;
+}
+
+.confirmation-image-centered{
+    height: 10px;
+    margin-top: -50%;
+}
+
+.confirmation-info{
+    margin-top: 60%;
+    text-align: center;
+}
+
+.confirmation-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0098CD;
+    color: white;
+    cursor: pointer;
+    border:1px solid black;
+    margin-top: 20%;
+
+}

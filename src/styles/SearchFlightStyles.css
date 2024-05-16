@@ -1,0 +1,140 @@
+.search-container{
+  background-color: #0098CD;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: auto; 
+  margin-top: 3%;
+}
+
+.search-form-title{
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 32px;
+}
+
+.search-form-subtitle{
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.search-form-group{
+  display: grid;
+  margin-top: -5%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-bottom: 2%;    
+}
+
+.search-form-groupLeft{
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form-groupRight{
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form-groupLeft-centered,
+.search-form-groupRight-centered{
+  margin-top: 1%;
+}
+
+.search-form-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.search-form-submit {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #0098CD;
+  cursor: pointer;
+  border:1px solid black;
+}
+  
+.search-form-submit:hover {
+  background-color: lightgray;
+}
+
+.search-form-submit b {
+  color: #0098CD;
+}
+
+.search-form-b{
+    color: white;
+}
+
+.search-form-groupSelect{
+  padding: 8px 10px; 
+  font-size: 14px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  background-color: #fff; 
+  color: #333;
+  cursor: pointer;
+}
+
+.search-form-groupSelect:hover {
+  border-color: #999;
+}
+
+.search-form-groupSelect:focus {
+  outline: none;
+  border-color: #0098CD;
+}
+
+.search-form-groupSelect option {
+  padding: 8px; 
+}
+
+.search-form-groupDate {
+  padding: 8px 12px !important;
+  font-size: 15px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 5px !important;
+  background-color: #fff !important;
+  color: #333 !important;
+  cursor: pointer !important;
+}
+
+
+
+@media (max-width: 768px) {
+  .search-form-group {
+    grid-template-columns: 1fr;
+  }
+  
+  .search-form-groupLeft,
+  .search-form-groupRight{
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container input:disabled {
+  opacity: 0.6; 
+  color: #999; 
+  cursor: not-allowed; 
+  background-color: #f9f9f9; 
+  border-color: #e0e0e0; 
+}

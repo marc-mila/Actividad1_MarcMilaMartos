@@ -1,0 +1,27 @@
+.error-title{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.error-home-button{
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #0098CD;
+        color: white;
+        cursor: pointer;
+        border:1px solid black;
+
+}
+
+.error-home-button-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.error-explanation{
+    font-size: 20px;
+}
