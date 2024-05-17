@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useLocalStorage from '../../hooks/useLocalStorage';
 import { useNavigate } from 'react-router-dom';
 import '../../styles/PaymentFlightStyles.css'
-import FormInput from './PaymentInput';
+import PaymentInput from './PaymentInput';
 
 const PaymentFlight = () => {
     const [getBookingOptionsSelected, setBookingOptionsSelected] = useLocalStorage('bookingOptionsSelected');
@@ -76,14 +76,14 @@ const PaymentFlight = () => {
             <div className="payment-container">  
                 <form onSubmit={handlePayed} className="payment-form">
                     <h2 className="payment-title">Last step to go</h2>
-                    <FormInput label="Name" id="name" name="name" type="text" value={name} onChange={handleNameChange} pattern="[A-Za-z\s]{1,50}" classNames={"payment-group"} required />
-                    <FormInput label="Card number" id="card" name="card" type="text" classNames={"payment-group"} pattern="[0-9]{16}" maxLength={16} required />
+                    <PaymentInput label="Name" id="name" name="name" type="text" value={name} onChange={handleNameChange} pattern="[A-Za-z\s]{1,50}" classNames={"payment-group"} required />
+                    <PaymentInput label="Card number" id="card" name="card" type="text" classNames={"payment-group"} pattern="[0-9]{16}" maxLength={16} required />
                     <div className='payment-group payment-grid-group'>
                         <div className="payment-shared-group row-group">
-                            <FormInput label="Expiration date" id="expiry_date" name="expiry_date" value={expiry} type="text" classNames={"payment-shared-group row-group"} pattern="(0[1-9]|1[0-2])\/([0-9]{2})" maxLength={5} placeholder="MM/YY" valid={validExpiryDate} onChange={handleExpiryChange} required />
+                            <PaymentInput label="Expiration date" id="expiry_date" name="expiry_date" value={expiry} type="text" classNames={"payment-shared-group row-group"} pattern="(0[1-9]|1[0-2])\/([0-9]{2})" maxLength={5} placeholder="MM/YY" valid={validExpiryDate} onChange={handleExpiryChange} required />
                         </div>
                         <div className="payment-shared-group row-group">
-                            <FormInput label="CVC" id="cvc" name="cvc" type="text" pattern="[0-9]{3}" maxLength={3} required />
+                            <PaymentInput label="CVC" id="cvc" name="cvc" type="text" pattern="[0-9]{3}" maxLength={3} required />
                         </div>
                     </div>
                     <br/>

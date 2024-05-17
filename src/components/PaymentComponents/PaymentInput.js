@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FormInput = ({ label, id, name, type, value, onChange, maxLength, pattern, required, placeholder, valid = true, classNames }) => {
+const PaymentInput = ({ label, id, name, type, value, onChange, maxLength, pattern, required, placeholder, valid = true, classNames }) => {
     return (
         <div className={classNames}>
             <label htmlFor={id}>{label}</label>
@@ -20,4 +20,4 @@ const FormInput = ({ label, id, name, type, value, onChange, maxLength, pattern,
     );
 }
 
-export default FormInput;
+export default PaymentInput;
